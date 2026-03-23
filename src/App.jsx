@@ -12,6 +12,7 @@ import UseSetting from "./NavLinkNavbar/NavPages/UseSetting";
 import NavHeadre from "./NavLinkNavbar/NavComponets/NavHeadre";
 import NavLayout from "./NavLinkNavbar/NavComponets/NavLayout";
 import myRouter from "./CreateBrowserRoutes/routes/route";
+import MyProfile from "./NestedCreateBrowser/routes";
 
 const App = () => {
   // toast.error("demo");
@@ -39,7 +40,8 @@ const App = () => {
         </Routes>
       </BrowserRouter> */}
 
-      <RouterProvider router={myRouter}/>
+      {/* <RouterProvider router={myRouter}/> */}
+      <RouterProvider router={MyProfile}/>
     </React.Fragment>
   );
 };
